@@ -61,10 +61,10 @@ login.post("/register", async (ctx) => {
     { expiresIn: 3600 }
   );
   let insertSql;
-  if (childPhone) {
+  if (myidentity == 3) {
     insertSql = `insert into users (phone,password,identity,token,child_Phone) values (${myphone},'${mypwd}','${myidentity}','${mytoken}',${childPhone})`;
   } else {
-    insertSql = `insert into users (phone,password,identity,token,child_Phone) values (${myphone},'${mypwd}','${myidentity}','${mytoken}')`;
+    insertSql = `insert into users (phone,password,identity,token) values (${myphone},'${mypwd}','${myidentity}','${mytoken}')`;
   }
 
   let result = new Promise((resolve, reject) => {
