@@ -187,6 +187,33 @@
             }
             
         }
+        ,{
+            "path" : "pages/helper_article/helper_article",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/helper_article2/helper_article2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/child_historyTag/child_historyTag",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "儿童的历史标签",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
   "globalStyle": {
 			"navigationBarTextStyle": "black",

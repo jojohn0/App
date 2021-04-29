@@ -24,6 +24,22 @@ tag.get("/getTag", async (ctx) => {
   ctx.body = myarr;
 });
 
+tag.get("/getChildTag", async (ctx) => {
+  let childPhone = ctx.query.childPhone;
+  console.log(childPhone);
+  let searchSql = `select * from tag where user_id=(select id from users where phone = ${childPhone})`;
+  let myarr = await new Promise((resolve, reject) => {
+    return db.query(searchSql, (err, data) => {
+      if (err) {
+        throw err;
+      }
+      resolve(data);
+    });
+  });
+
+  ctx.body = myarr;
+});
+
 // 插入心情标签
 tag.post("/insert", async (ctx) => {
   let user_id = ctx.request.body.id;

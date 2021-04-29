@@ -51,15 +51,25 @@
 
     <!-- 如果是帮扶人员 -->
     <view class="special_column" v-if="userInfo.identity == 2">
-      <navigator class="column_item" url="../log/log">
+      <!-- <navigator class="column_item" url="../log/log">
         <image src="../../static/log_icon.png"></image>
         <view class="item_name">日志</view>
-      </navigator>
+      </navigator> -->
       <!-- <navigator class="column_item" url="../chat/chat">
 		    <image src="../../static/chat_icon.png"></image>
 		    <view class="item_name">智慧聊天</view>
 		  </navigator> -->
-      <navigator class="column_item" url="../mood_tag/mood_tag">
+      <navigator class="column_item" url="../remind/remind">
+        <image src="../../static/bear5.png"></image>
+        <view class="item_name">智能小熊</view>
+      </navigator>
+      <navigator
+        class="column_item"
+        :url="
+          '../child_historyTag/child_historyTag?childPhone=' +
+          userInfo.childPhone
+        "
+      >
         <image src="../../static/tag_icon.png"></image>
         <view class="item_name">心情标签</view>
       </navigator>
@@ -75,7 +85,13 @@
         <image src="../../static/bear5.png"></image>
         <view class="item_name">智能小熊</view>
       </navigator>
-      <navigator class="column_item" url="../mood_tag/mood_tag">
+      <navigator
+        class="column_item"
+        :url="
+          '../child_historyTag/child_historyTag?childPhone=' +
+          userInfo.childPhone
+        "
+      >
         <image src="../../static/tag_icon.png"></image>
         <view class="item_name">心情标签</view>
       </navigator>
@@ -138,26 +154,26 @@
     <!-- 帮扶行动 帮扶人员端 start -->
     <view class="hot_words" v-else-if="userInfo.identity == 2">
       <view class="hot_title">帮扶行动</view>
-      <navigator url="../adult_article1/adult_article1" class="hot_item">
-        <view class="item_title">今天，如何关爱留守儿童</view>
+      <navigator url="../helper_article/helper_article" class="hot_item">
+        <view class="item_title">广州将开展关爱留守儿童行动</view>
         <view class="item_content">
           <view class="item_content_info">
-            “孩子们，请画出一位自己最爱的亲人。”乡村小学的教室里，有的孩子捏着笔头踟蹰，有的孩子画着画着就大哭起来，有的孩子悄悄用手擦着眼角……
+            9月14日下午，全国农村留守儿童工作电视电话会议在北京召开，广州市妇联组织有关单位代表在广州分会场收听收看了会议实况并对如何贯彻会议精神作出具体部署。
           </view>
           <view class="item_content_img">
-            <image src="../../static/adult_article1.jpg"></image>
+            <image src="../../static/helper_article.jpg"></image>
           </view>
         </view>
       </navigator>
 
-      <navigator url="../adult_article2/adult_article2" class="hot_item">
-        <view class="item_title">家长如何关爱留守儿童</view>
+      <navigator url="../helper_article2/helper_article2" class="hot_item">
+        <view class="item_title">关爱留守儿童，我们在行动~</view>
         <view class="item_content">
           <view class="item_content_info">
-            社会的发展，生活节奏的加快，消费水平的提高，让很多的家长不得不离开自己的家乡，离开自己年幼的孩子出外打工，因此留守儿童越来越多，他们成了备受关注的焦点，那么家长如何关心自己留守的孩子，让孩子能够健康的成长呢？
+            7月18日，阎良区举办“关爱留守儿童，放飞航空梦想”主题活动，组织阎良区40名留守儿童参加了拓展训练、航空模拟体验、集体赠书等，点燃孩子们的航空梦想，让“留守的花朵”在阳光下绽放！
           </view>
           <view class="item_content_img">
-            <image src="../../static/adult_article2.jpg"></image>
+            <image src="../../static/helper_article2.jpg"></image>
           </view>
         </view>
       </navigator>
@@ -242,7 +258,7 @@ export default {
     if (userInfo != null) {
       this.isLogin = true;
       this.userInfo = userInfo;
-      console.log(this.userInfo.identity);
+      console.log(this.userInfo);
     } else {
       this.isLogin = false;
       this.userInfo = {};

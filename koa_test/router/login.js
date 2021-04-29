@@ -34,7 +34,9 @@ login.post("/", async (ctx) => {
         phone: myarr[0].phone,
         id: myarr[0].id,
         identity: myarr[0].identity,
+        childPhone: myarr[0].child_phone,
       };
+      console.log(myarr[0]);
     } else {
       ctx.body = {
         code: 400,
