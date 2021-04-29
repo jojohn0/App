@@ -1,0 +1,31 @@
+.container{
+	width: 99%;
+	margin: 0 auto;
+	padding: 0 40upx 0 40upx;
+}
+
+.header .title{
+	text-align: center;
+}
+
+.header .time{
+	color: #9E9E9E;
+	margin: 10upx 50upx;
+	margin-top: 20upx;
+	margin-left: 60upx;
+}
+
+.image{
+	text-align: center;
+	/* margin: 0 auto; */
+}
+
+.content{
+	padding-bottom: 50upx;
+}
+
+.content p,h1,h2,h3,h4,h5,li{
+	margin: 15upx;
+}
+
+

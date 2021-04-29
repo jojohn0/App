@@ -1,0 +1,35 @@
+.header,
+.content {
+  padding: 0 40rpx;
+}
+.header {
+  margin-top: 40rpx;
+}
+.header input {
+  font-size: 17px;
+}
+.content {
+  margin-top: 15rpx;
+}
+.content input {
+  font-size: 17px;
+}
+
+/* footer start */
+.footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+}
+.footer image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+/* footer end */
+

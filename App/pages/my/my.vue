@@ -1,0 +1,104 @@
+<template>
+  <view class="myPage">
+    <!-- 头像 名称-->
+    <view class="login-info-box" v-if="isLogin==false">
+      <view class="portrait-box">
+        <navigator url="../login/login">
+          <image
+            class="portrait"
+            src="/static/image/my/missing-face.png"
+          ></image>
+        </navigator>
+      </view>
+      <view class="info-box" v-if="isLogin==false">
+        <text class="username">游客</text>
+      </view>
+    </view>
+		<view class="login-info-box" v-if="isLogin">
+		  <view class="portrait-box">
+		    <navigator>
+		      <image
+		        class="portrait"
+		        src="/static/image/my/missing-face.png"
+		      ></image>
+		    </navigator>
+		  </view>
+			<view class="info-box">
+			  <text class="username">用户{{this.userInfo.id}}</text>
+			</view>
+		</view>
+    <!-- 账号管理 -->
+    <view class="cardList" v-if="isLogin">
+      <navigator url="../count_manage/count_manage">
+        <view class="card-item">
+          <text class="title">账号管理</text>
+          <image class="more" src="../../static/iconfont/more.png"></image>
+        </view>
+      </navigator>
+      <view class="card-item">
+        <text class="title">隐私</text>
+        <image class="more" src="../../static/iconfont/more.png"></image>
+      </view>
+
+      <view class="card-item">
+        <text class="title">设置</text>
+        <image class="more" src="../../static/iconfont/more.png"></image>
+      </view>
+
+      <navigator url="../about/about">
+        <view class="card-item">
+          <text class="title">关于与帮助</text>
+          <image class="more" src="../../static/iconfont/more.png"></image>
+        </view>
+      </navigator>
+    </view>
+		<button type="default" @click="clearStr" v-if="isLogin">退出登录</button>
+  </view>
+</template>
+ 
+<script>
+export default {
+  data() {
+    return {
+      title: "Hello",
+      userInfo: {},
+			isLogin:false,
+    };
+  },
+  onLoad() {
+		
+  },
+	onShow(){
+		// 使用挂载方法获取用户数据
+		let userInfo = this.getGlobalUser("globalUser");
+		
+		console.log(userInfo);
+		if(userInfo!=null){
+			this.isLogin = true;
+			this.userInfo = userInfo;
+			console.log(this.userInfo)
+		}else{
+			this.isLogin = false;
+			this.userInfo = {}
+		}
+	},
+	onUnload(){
+		
+	},
+	
+  methods: {
+		clearStr(){
+			uni.clearStorageSync();
+			uni.showToast({
+				title:'清空缓存成功',
+				mask:false,
+				duration:"1500"
+			})
+		}
+	},
+};
+</script>
+
+<style>
+@import url("my.css");
+</style>

@@ -1,0 +1,38 @@
+.aboutContainer {
+  padding: 0 40upx;
+}
+.logo {
+  width: 300upx;
+  height: 300upx;
+  margin: 100upx auto;
+}
+
+.logo image {
+	border-radius: 250px;
+  width: 300upx;
+  height: 300upx;
+}
+
+.aboutList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400upx;
+  margin-top: 100upx;
+  width: 100%;
+}
+
+.about_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 40upx;
+}
+
+.more {
+  width: 20px;
+  height: 16px;
+}

@@ -1,0 +1,23 @@
+.pageContainer {
+  padding: 0 40upx;
+}
+.cardList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500upx;
+  margin-top: 0upx;
+  width: 100%;
+}
+.card-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-size: 40upx;
+}
+.more {
+  width: 20px;
+  height: 16px;
+}
