@@ -52,6 +52,7 @@ login.post("/register", async (ctx) => {
   let mypwd = ctx.request.body.password;
   let myidentity = ctx.request.body.identity;
   let childPhone = ctx.request.body.childPhone;
+  console.log(mypwd);
   // 创建一个token
   let mytoken = jwt.sign(
     {
