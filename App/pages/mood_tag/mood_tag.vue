@@ -1,21 +1,23 @@
 <template>
   <view class="moodTagContainer">
-    <view class="question">你现在心情怎么样</view>
-    <view class="tag">
-      <swiper
-        :indicator-dots="false"
-        :autoplay="false"
-        :interval="3000"
-        :duration="1000"
-        :circular="true"
-      >
-        <swiper-item v-for="item in tagImg" @click="addTag(item)">
-          <view class="swiper-item">
-            <image :src="item.src" mode="" :id="item.id"></image>
-          </view>
-        </swiper-item>
-      </swiper>
-    </view>
+    <view class="tagContainer">
+		<view class="question">你现在心情怎么样</view>
+		<view class="tag">
+		  <swiper
+		    :indicator-dots="false"
+		    :autoplay="false"
+		    :interval="3000"
+		    :duration="1000"
+		    :circular="true"
+		  >
+		    <swiper-item v-for="item in tagImg" @click="addTag(item)">
+		      <view class="swiper-item">
+		        <image :src="item.src" mode="" :id="item.id"></image>
+		      </view>
+		    </swiper-item>
+		  </swiper>
+		</view>
+	</view>
 
     <!-- 当前选中标签 start -->
     <view class="currentTag">
@@ -72,12 +74,6 @@ export default {
           src: "../../static/tag/contented.png",
           des: "满足",
           type: "success",
-        },
-        {
-          id: 5,
-          src: "../../static/tag/active.png",
-          des: "活泼",
-          type: "royal",
         },
         {
           id: 5,

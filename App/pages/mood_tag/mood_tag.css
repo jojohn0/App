@@ -3,10 +3,16 @@
 }
 .question {
   text-align: center;
-  padding-top: 150upx;
+  padding-top: 70upx;
 }
 
-.tag {
+.tagContainer {
+	width: 96%;
+	margin: 50upx auto;
+	height: 470upx;
+	background-color: white;
+	border-radius: 50upx;
+	box-shadow: 10upx 15upx 5upx #eeeeee;
 }
 
 swiper{
@@ -91,10 +97,17 @@ form {
 }
 
 .history {
-  font-size: 14px;
+  font-size: 10px;
   position: absolute;
-  top: 20upx;
-  right: 20upx;
+  top:10upx;
+  right: 30upx;
+  background-color: #3471ff;
+  height: 60upx;
+  width: 120upx;
+  line-height: 60upx;
+  border-radius: 17upx;
+  text-align: center;
+  color: white;
 }
 
 .finsh {

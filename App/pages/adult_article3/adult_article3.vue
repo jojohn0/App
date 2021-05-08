@@ -23,6 +23,40 @@
 			
 			<p>“全面放开建制镇和小城市落户限制，有序放开中等城市落户限制，合理确定大城市落户条件”“建立财政转移支付同农业转移人口市民化挂钩机制”……十八届三中全会的改革蓝图，勾画出亿万人民的未来。“孩子们成长得更好，是我们最大的心愿。”这是习近平总书记在去年“六一”前夕，对孩子们说的肺腑之言。相信抓住改革契机，逐步破除制度的弊端，不断增强发展的力量，在奔向中国梦的路上，一定能让更多孩子同享雨露阳光、健康快乐成长。</p>
 		</view>
+		<view class="comment">
+				<view class="issue">
+					<input type="text" value="" placeholder="写下你的留言"/>
+				</view>
+				<view class="publish">发送</view>
+				<view class="comment_select clearfix">
+					<view class="textHeader">
+						精选留言
+					</view>
+					<view class="comment_info">
+						<view class="user_icon">
+							<image src="../../static/jiazhang.png"></image>
+						</view>
+						<view class="user_name">
+							家长1
+						</view>
+						<view class="user_comment">
+							哈哈哈哈哈
+						</view>
+					</view>
+					<view class="comment_info">
+						<view class="user_icon">
+							<image src="../../static/jiazhang.png"></image>
+						</view>
+						<view class="user_name">
+							家长2
+						</view>
+						<view class="user_comment">
+							留守儿童确实值得关心
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 

@@ -50,24 +50,28 @@
     <view class="cardList" v-if="isLogin">
       <navigator url="../count_manage/count_manage">
         <view class="card-item">
+		  <image src="../../static/user_manage.png" class="item_icon"></image>
           <text class="title">账号管理</text>
-          <image class="more" src="../../static/iconfont/more.png"></image>
+          <image class="more1" src="../../static/iconfont/more.png"></image>
         </view>
       </navigator>
       <view class="card-item">
+		  <image src="../../static/secret.png" class="item_icon"></image>
         <text class="title">隐私</text>
-        <image class="more" src="../../static/iconfont/more.png"></image>
+        <image class="more2" src="../../static/iconfont/more.png"></image>
       </view>
 
       <view class="card-item">
+		  <image src="../../static/settings.png" class="item_icon"></image>
         <text class="title">设置</text>
-        <image class="more" src="../../static/iconfont/more.png"></image>
+        <image class="more3" src="../../static/iconfont/more.png"></image>
       </view>
 
       <navigator url="../about/about">
         <view class="card-item">
+			<image src="../../static/about.png" class="item_icon"></image>
           <text class="title">关于与帮助</text>
-          <image class="more" src="../../static/iconfont/more.png"></image>
+          <image class="more4" src="../../static/iconfont/more.png"></image>
         </view>
       </navigator>
     </view>

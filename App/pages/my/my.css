@@ -20,20 +20,52 @@
   flex-direction: column;
   justify-content: space-around;
   height: 500upx;
-  margin-top: 100upx;
+  margin-top: 60upx;
   width: 100%;
+  background-color: white;
+  padding: 25upx;
+  padding-left: 35upx;
+  border-radius: 50upx;
+  box-shadow: 10upx 15upx 5upx #eeeeee;
 }
 .card-item {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
 }
-.title {
-  font-size: 40upx;
+
+.item_icon{
+	width: 40upx;
+	height: 40upx;
 }
-.more {
+
+.title {
+  /* margin-left: -340upx; */
+  margin-left: 30upx;
+  font-size: 36upx;
+}
+.more1 {
+  margin-left: 350upx;
   width: 20px;
   height: 16px;
+}
+
+.more2{
+margin-left: 420upx;
+  width: 20px;
+  height: 16px;	
+}
+
+.more3{
+	margin-left: 420upx;
+	  width: 20px;
+	  height: 16px;	
+}
+
+.more4{
+	margin-left: 310upx;
+	  width: 20px;
+	  height: 16px;	
 }
 
 button{

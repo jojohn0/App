@@ -3,6 +3,7 @@ import App from './App'
 
 Vue.config.productionTip = false
 
+// 获取用户信息
 Vue.prototype.getGlobalUser = function(key){
 	var userInfo = uni.getStorageSync("globalUser");
 	if(userInfo!=null && userInfo != "" && userInfo != undefined){

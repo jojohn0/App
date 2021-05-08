@@ -14,7 +14,7 @@
 }
 
 .headerContainer .logo image {
-	border-radius: 40px;
+  border-radius: 40px;
   width: 55upx;
   height: 55upx;
 }
@@ -48,7 +48,7 @@
 
 swiper {
   margin: 0 auto;
-	margin-top: 60upx;
+  margin-top: 60upx;
   width: 90%;
   border-radius: 10px;
   overflow: hidden;
@@ -67,14 +67,25 @@ swiper-item image {
 .special_column {
   display: flex;
   flex-direction: row;
+  width: 660upx;
+  height: 200upx;
+  padding-top: 30upx;
+  margin: 0 auto;
+  border-radius: 50upx;
+  box-shadow:  10upx 15upx 5upx #eeeeee;
   justify-content: space-around;
-  margin-top: 40upx;
+  margin-top: 60upx;
+  background-color: white;
 }
 
 .column_item {
-  width: 120upx;
+  width: 150upx;
+  height: 120upx;
+  padding-top: 20upx;
   text-align: center;
   font-size: 14px;
+  /* background-color: #f9f9f9; */
+  border-radius: 10px;
 }
 
 .column_item image {
@@ -91,25 +102,66 @@ swiper-item image {
   justify-content: center;
   width: 100%;
   /* padding: 20upx 65upx 0 65upx; */
-  border-top: 5upx solid #ababab;
-  margin-top: 50upx;
+  /* border-top: 5upx solid #ababab; */
+  margin-top: 30upx;
+}
+
+.hot_header{
+	display: flex;
+	/* background-color: red; */
+}
+
+.hot_header .lookUp{
+	font-size: 14px;
+	margin-top: 30upx;
+	border-radius: 20upx;
+	width: 180upx;
+	text-align: center;
+	height: 100upx;
+	color: #1296db;
+	line-height: 100upx;
+	background-color: white;
+	box-shadow: 10upx 15upx 5upx #eeeeee;
 }
 
 .hot_words .hot_title {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 30upx;
   margin: 30upx 65upx 30upx 65upx;
+  line-height: 50upx;
+  color: #1296db;
+  border-radius: 20upx;
+  width: 400upx;
+  height: 100upx;
+  padding-left: 20upx;
+  line-height: 100upx;
+  /* background-color: white; */
+  /* box-shadow: 10upx 15upx 5upx #eeeeee; */
 }
 
+.hot_title image{
+	width: 40upx;
+	height: 40upx;
+	padding-right: 20upx;
+	line-height: 40upx;
+}
+
+
 .hot_words .hot_item {
-  width: 86%;
+  width: 80%;
   height: 210upx;
-  margin: 0upx 0 50upx 65upx;
+  margin: 0upx 0 50upx 50upx;
+  padding: 30upx;
+  /* background-color: #f9f9f9; */
+  padding-top: 40upx;
+  box-shadow: 10upx 15upx 5upx #eeeeee;
+  background-color: white;
+  border-radius: 50upx;
 }
 
 .hot_item .item_title {
-	width: 440upx;
+  width: 440upx;
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 10upx;
@@ -126,13 +178,14 @@ swiper-item image {
 }
 
 .hot_item .item_content_info {
-  width: 445upx;
+  width: 430upx;
   font-size: 14px;
   overflow: hidden;
   -webkit-line-clamp: 4;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  margin-top:10upx;
 }
 
 .hot_item .item_content_img {
@@ -140,8 +193,10 @@ swiper-item image {
 }
 
 .hot_item .item_content_img image {
-  width: 170upx;
-  height: 150upx;
+  width: 160upx;
+  height: 140upx;
+  border-radius: 30upx;
+  margin-top: -30upx;
 }
 
 /* 搜索 end */

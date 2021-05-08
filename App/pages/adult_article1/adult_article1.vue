@@ -49,6 +49,40 @@
 			
 			<p>“从长远看，伴随着更多留守儿童随父母进城生活，农村留守儿童这一群体将会不断减少。但从眼前来说，孩子的亲情陪伴、教育和安全等问题等待不起，在做好城乡人口和发展长远规划的同时，必须加强对农村留守儿童问题的综合社会治理。”段成荣强调。</p>
 		</view>
+		<view class="comment">
+				<view class="issue">
+					<input type="text" value="" placeholder="写下你的留言"/>
+				</view>
+				<view class="publish">发送</view>
+				<view class="comment_select clearfix">
+					<view class="textHeader">
+						精选留言
+					</view>
+					<view class="comment_info">
+						<view class="user_icon">
+							<image src="../../static/jiazhang.png"></image>
+						</view>
+						<view class="user_name">
+							家长1
+						</view>
+						<view class="user_comment">
+							哈哈哈哈哈
+						</view>
+					</view>
+					<view class="comment_info">
+						<view class="user_icon">
+							<image src="../../static/jiazhang.png"></image>
+						</view>
+						<view class="user_name">
+							家长2
+						</view>
+						<view class="user_comment">
+							留守儿童确实值得关心
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 

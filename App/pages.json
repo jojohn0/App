@@ -5,13 +5,15 @@
 		  "path": "pages/login/login",
 		  "style": {
 		    "navigationBarTitleText": "登录",
-		    "enablePullDownRefresh": false
+		    "enablePullDownRefresh": false,
+			"navigationBarBackgroundColor":"#f9f9f9"
 		  }
 		},
     {
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "首页"
+        "navigationBarTitleText": "首页",
+		"navigationBarBackgroundColor":"#f9f9f9"
       }
     },
     {
@@ -25,21 +27,24 @@
       "path": "pages/my/my",
       "style": {
         "navigationBarTitleText": "我的",
-        "enablePullDownRefresh": false
+        "enablePullDownRefresh": false,
+		"navigationBarBackgroundColor":"#f9f9f9"
       }
     },
     {
       "path": "pages/log/log",
       "style": {
         "navigationBarTitleText": "日志列表",
-        "enablePullDownRefresh": false
+        "enablePullDownRefresh": false,
+		"navigationBarBackgroundColor":"#f9f9f9"
       }
     },
     {
       "path": "pages/log_info/log_info",
       "style": {
         "navigationBarTitleText": "日志",
-        "enablePullDownRefresh": false
+        "enablePullDownRefresh": false,
+		"navigationBarBackgroundColor":"#f9f9f9"
       }
     },
     
@@ -55,7 +60,8 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "心情标签",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
             }
             
         }
@@ -63,8 +69,9 @@
             "path" : "pages/about/about",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "关于平台",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
             }
             
         }
@@ -72,8 +79,9 @@
             "path" : "pages/count_manage/count_manage",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "账号管理",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
             }
             
         }
@@ -90,8 +98,9 @@
             "path" : "pages/newLog/newLog",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "新建日志",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
             }
             
         }
@@ -100,7 +109,8 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "历史标签",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
             }
             
         }
@@ -110,6 +120,7 @@
                         {
                             "navigationBarTitleText": "小爱姐姐",
                             "enablePullDownRefresh": false,
+							// "navigationBarBackgroundColor":"#f8f8f8"
             				"navigationBarBackgroundColor":"#ececec"
                         }
             
@@ -128,7 +139,8 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
             }
             
         }
@@ -137,7 +149,8 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
             }
             
         }
@@ -147,7 +160,8 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
             }
             
         }
@@ -156,7 +170,8 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
             }
             
         }
@@ -165,7 +180,8 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
             }
             
         }
@@ -174,16 +190,18 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
             }
             
         }
         ,{
-            "path" : "pages/remind/remind",
+            "path" : "pages/bear/bear",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
             }
             
         }
@@ -192,7 +210,8 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
             }
             
         }
@@ -201,7 +220,8 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
             }
             
         }
@@ -210,6 +230,26 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "儿童的历史标签",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/bear/bear",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/secret/secret",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             

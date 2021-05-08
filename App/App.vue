@@ -17,4 +17,15 @@ export default {
 view {
   box-sizing: border-box;
 }
+page{
+	background-color: #f9f9f9;
+}
+.clearfix::after {
+          content: '';
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden;
+  }
+
 </style>

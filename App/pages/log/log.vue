@@ -1,10 +1,10 @@
 <template>
   <view class="logContainer">
     <!-- search start -->
-    <view class="logHeader">
+    <!-- <view class="logHeader">
       <view class="search_icon"></view>
       <input type="text" placeholder="搜索日志" />
-    </view>
+    </view> -->
     <!-- search end -->
 
     <!-- folder start -->

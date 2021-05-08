@@ -24,6 +24,40 @@
 			
 			
 		</view>
+		<view class="comment">
+				<view class="issue">
+					<input type="text" value="" placeholder="写下你的留言"/>
+				</view>
+				<view class="publish">发送</view>
+				<view class="comment_select clearfix">
+					<view class="textHeader">
+						精选留言
+					</view>
+					<view class="comment_info">
+						<view class="user_icon">
+							<image src="../../static/stu.png"></image>
+						</view>
+						<view class="user_name">
+							帮扶人员1
+						</view>
+						<view class="user_comment">
+							哈哈哈哈哈
+						</view>
+					</view>
+					<view class="comment_info">
+						<view class="user_icon">
+							<image src="../../static/stu.png"></image>
+						</view>
+						<view class="user_name">
+							帮扶人员2
+						</view>
+						<view class="user_comment">
+							留守儿童确实值得关心
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 

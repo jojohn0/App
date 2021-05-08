@@ -18,7 +18,7 @@
 
     <!-- 轮播图 start -->
     <view class="swiper_container">
-      <swiper indicator-dots autoplay circular>
+      <swiper indicator-dots autoplay circular display-multiple-items="1">
         <swiper-item>
           <image src="../../static/swiper_item_1.jpg" mode="scalefill"></image>
         </swiper-item>
@@ -39,7 +39,7 @@
         <image src="../../static/log_icon.png"></image>
         <view class="item_name">日志</view>
       </navigator>
-      <navigator class="column_item" url="../remind/remind">
+      <navigator class="column_item" url="../bear/bear">
         <image src="../../static/bear5.png"></image>
         <view class="item_name">智能小熊</view>
       </navigator>
@@ -59,7 +59,7 @@
 		    <image src="../../static/chat_icon.png"></image>
 		    <view class="item_name">智慧聊天</view>
 		  </navigator> -->
-      <navigator class="column_item" url="../remind/remind">
+      <navigator class="column_item" url="../bear/bear">
         <image src="../../static/bear5.png"></image>
         <view class="item_name">智能小熊</view>
       </navigator>
@@ -81,7 +81,7 @@
 		    <image src="../../static/log_icon.png"></image>
 		    <view class="item_name">日历</view>
 		  </navigator> -->
-      <navigator class="column_item" url="../remind/remind">
+      <navigator class="column_item" url="../bear/bear">
         <image src="../../static/bear5.png"></image>
         <view class="item_name">智能小熊</view>
       </navigator>
@@ -100,7 +100,15 @@
 
     <!-- 最新热点 家长端 start -->
     <view class="hot_words" v-if="userInfo.identity == 3">
-      <view class="hot_title">最新热点</view>
+      <view class="hot_header">
+		  <view class="hot_title">
+		  		  <image src="../../static/hotPoint.png"></image>
+		  		  <text>最新热点</text>
+		  </view>
+		  <navigator class="lookUp">
+			  查看更多
+		  </navigator>
+	  </view>
       <!-- 传后端 -->
       <!-- <navigator :url="'../article_info/article_info?id='+allArticle[index].id" class="hot_item" v-for="(item,index) in allArticle">
         <view class="item_title">{{item.title}}</view>
@@ -153,7 +161,15 @@
 
     <!-- 帮扶行动 帮扶人员端 start -->
     <view class="hot_words" v-else-if="userInfo.identity == 2">
-      <view class="hot_title">帮扶行动</view>
+      <view class="hot_header">
+		  <view class="hot_title">
+		  		  <image src="../../static/acitivity.png"></image>
+		  		  <text>帮扶行动</text>
+		  </view>
+		  <navigator class="lookUp" >
+		  			  查看更多
+		  </navigator>
+	  </view>
       <navigator url="../helper_article/helper_article" class="hot_item">
         <view class="item_title">广州将开展关爱留守儿童行动</view>
         <view class="item_content">
@@ -194,7 +210,16 @@
 
     <!-- 卡通与故事 儿童端 start -->
     <view class="hot_words" v-else-if="userInfo.identity == 1">
-      <view class="hot_title">卡通与故事</view>
+      <view class="hot_header">
+		 <view class="hot_title">
+			 <image src="../../static/cartoon.png"></image>
+			 <text>卡通与故事</text>
+		 </view>
+		  <navigator class="lookUp" >
+		  			  查看更多
+		  </navigator>
+	  </view>
+	  
       <navigator url="../child_video1/child_video1" class="hot_item">
         <view class="item_title">狮子VS老虎 | 比一比儿歌</view>
         <view class="item_content">
@@ -241,7 +266,9 @@
 
 <script>
 import config from "../../utils/config.js";
+import panda_swiperTab from '@/components/panda-swiperTab/panda-swiperTab.vue';
 export default {
+ components:{panda_swiperTab},
   data() {
     return {
       // 用户信息
@@ -279,16 +306,8 @@ export default {
     // }
   },
   methods: {
-    // uni.navigateTo({
-    //   url: "../search/search",
-    //   success: (res) => {
-    //     console.log(res);
-    //   },
-    //   fail: (err) => {
-    //     console.log(err);
-    //   },
-    // });
-  },
+    
+  }, 
 };
 </script>
 

@@ -36,6 +36,40 @@
 			<li>再苦再累也不要伤了孩子的心。</li>
 			
 		</view>
+		<view class="comment">
+				<view class="issue">
+					<input type="text" value="" placeholder="写下你的留言"/>
+				</view>
+				<view class="publish">发送</view>
+				<view class="comment_select clearfix">
+					<view class="textHeader">
+						精选留言
+					</view>
+					<view class="comment_info">
+						<view class="user_icon">
+							<image src="../../static/jiazhang.png"></image>
+						</view>
+						<view class="user_name">
+							家长1
+						</view>
+						<view class="user_comment">
+							哈哈哈哈哈
+						</view>
+					</view>
+					<view class="comment_info">
+						<view class="user_icon">
+							<image src="../../static/jiazhang.png"></image>
+						</view>
+						<view class="user_name">
+							家长2
+						</view>
+						<view class="user_comment">
+							留守儿童确实值得关心
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 

@@ -40,7 +40,7 @@
 			}
 		},
 		onLoad() {
-		this.getFrinds();
+			this.getFrinds();
 		},
 		methods: {
 			//处理时间
