@@ -12,6 +12,9 @@
       </view>
       <view class="info-box" v-if="isLogin == false">
         <text class="username">游客</text>
+		<view class="tips">
+			点击头像登录
+		</view>
       </view>
     </view>
     <view class="login-info-box" v-else-if="isLogin && userInfo.identity == 1">

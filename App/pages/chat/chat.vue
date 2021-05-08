@@ -1,5 +1,5 @@
 <template>
-	<view class="chat">
+	<view class="chat"  v-if="isLogin==true">
 		<view class="head"> 
 			<view class="head-left">
 				<image class="portrait" src="../../static/image/chat/t2.jpeg" mode=""></image>
@@ -37,10 +37,50 @@
 		data() {
 			return {
 				friends:[],
+				userInfo:'',
+				isLogin:''
 			}
 		},
 		onLoad() {
+			let userInfo = this.getGlobalUser("globalUser");
+			
+			console.log(userInfo);
+			if (userInfo != null) {
+			  this.isLogin = true;
+			  this.userInfo = userInfo;
+			  console.log(this.userInfo);
+			} else {
+			  this.isLogin = false;
+			  this.userInfo = {};
+			}
+			
 			this.getFrinds();
+			
+		},
+		onShow() {
+			let userInfo = this.getGlobalUser("globalUser");
+			
+			console.log(userInfo);
+			if (userInfo != null) {
+			  this.isLogin = true;
+			  this.userInfo = userInfo;
+			  console.log(this.userInfo);
+			} else {
+			  this.isLogin = false;
+			  this.userInfo = {};
+			}
+			if(this.isLogin==false){
+				uni.showLoading({
+					title:'请先登录'
+				});
+				setTimeout(function(){
+					uni.hideLoading();
+				},700);
+			}
+			console.log(this.isLogin)
+			
+			this.getFrinds();
+			
 		},
 		methods: {
 			//处理时间
