@@ -99,7 +99,7 @@
     <!-- 功能 end -->
 
     <!-- 最新热点 家长端 start -->
-    <view class="hot_words" v-if="userInfo.identity == 3">
+    <view class="hot_words" v-if="userInfo.identity == 3 || isLogin==false">
       <view class="hot_header">
 		  <view class="hot_title">
 		  		  <image src="../../static/hotPoint.png"></image>
