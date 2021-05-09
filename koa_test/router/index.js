@@ -7,6 +7,7 @@ const home = require("./home");
 const login = require("./login");
 const tag = require("./tag");
 const log = require("./log");
+const user = require("./user");
 
 // router.get("/list",np async (ctx) => {
 //   ctx.response.body = "列表页";
@@ -17,6 +18,7 @@ router.use("/home", home.routes(), home.allowedMethods());
 router.use("/login", login.routes(), login.allowedMethods());
 router.use("/tag", tag.routes(), tag.allowedMethods());
 router.use("/log", log.routes(), log.allowedMethods());
+router.use("/user", user.routes(), user.allowedMethods());
 
 /**
  * 如果前端还是访问了http://localhost:3000/，

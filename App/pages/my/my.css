@@ -45,13 +45,13 @@
   font-size: 36upx;
 }
 .more1 {
-  margin-left: 350upx;
+  margin-left: 420upx;
   width: 20px;
   height: 16px;
 }
 
 .more2{
-margin-left: 420upx;
+  margin-left: 420upx;
   width: 20px;
   height: 16px;	
 }
@@ -64,6 +64,12 @@ margin-left: 420upx;
 
 .more4{
 	margin-left: 310upx;
+	  width: 20px;
+	  height: 16px;	
+}
+
+.more5{
+	margin-left: 348upx;
 	  width: 20px;
 	  height: 16px;	
 }

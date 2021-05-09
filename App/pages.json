@@ -251,7 +251,208 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/news/news",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": true,
+				"navigationBarBackgroundColor":"#F9F9F9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/education1/education1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/education2/education2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/education3/education3",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/adult_article4/adult_article4",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/adult_article5/adult_article5",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/story1/story1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/story2/story2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/story3/story3",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/story4/story4",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/sc1/sc1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/sc2/sc2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/sc3/sc3",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/sc4/sc4",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/child_video3/child_video3",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/child_video5/child_video5",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/setting/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/currency/currency",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "通用",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/notice/notice",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "消息通知",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/Privacy/Privacy",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#F9F9F9"
             }
             
         }

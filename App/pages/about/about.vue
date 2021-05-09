@@ -9,12 +9,12 @@
         <image class="more" src="../../static/iconfont/more.png"></image>
       </view>
       <view class="about_item">
-        <view class="title">投诉</view>
+        <view class="title">帮助与反馈</view>
         <image class="more" src="../../static/iconfont/more.png"></image>
       </view>
       <view class="about_item">
-        <view class="title">检查新版本</view>
-        <image class="more" src="../../static/iconfont/more.png"></image>
+        <view class="title">当前版本</view>
+        <text>1.0.0</text>
       </view>
     </view>
   </view>

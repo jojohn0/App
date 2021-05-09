@@ -105,7 +105,7 @@
 		  		  <image src="../../static/hotPoint.png"></image>
 		  		  <text>最新热点</text>
 		  </view>
-		  <navigator class="lookUp">
+		  <navigator class="lookUp" url="../news/news">
 			  查看更多
 		  </navigator>
 	  </view>
@@ -166,7 +166,7 @@
 		  		  <image src="../../static/acitivity.png"></image>
 		  		  <text>帮扶行动</text>
 		  </view>
-		  <navigator class="lookUp" >
+		  <navigator class="lookUp" url="../news/news">
 		  			  查看更多
 		  </navigator>
 	  </view>
@@ -215,7 +215,7 @@
 			 <image src="../../static/cartoon.png"></image>
 			 <text>卡通与故事</text>
 		 </view>
-		  <navigator class="lookUp" >
+		  <navigator class="lookUp" url="../news/news">
 		  			  查看更多
 		  </navigator>
 	  </view>

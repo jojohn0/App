@@ -54,21 +54,38 @@
       <navigator url="../count_manage/count_manage">
         <view class="card-item">
 		  <image src="../../static/user_manage.png" class="item_icon"></image>
-          <text class="title">账号管理</text>
+          <text class="title">账号</text>
           <image class="more1" src="../../static/iconfont/more.png"></image>
         </view>
       </navigator>
-      <view class="card-item">
-		  <image src="../../static/secret.png" class="item_icon"></image>
-        <text class="title">隐私</text>
-        <image class="more2" src="../../static/iconfont/more.png"></image>
-      </view>
+	  
+	  <navigator url="../notice/notice">
+	  		  <view class="card-item">
+	  		  	<image src="../../static/secret.png" class="item_icon"></image>
+	  		    <text class="title">消息通知</text>
+	  		    <image class="more5" src="../../static/iconfont/more.png"></image>
+	  		  </view>
+	  </navigator>
+	  
+      <navigator url="../currency/currency">
+		  <view class="card-item">
+		  		  <image src="../../static/settings.png" class="item_icon"></image>
+		    <text class="title">通用</text>
+		    <image class="more2" src="../../static/iconfont/more.png"></image>
+		  </view>
+	  </navigator>
 
-      <view class="card-item">
-		  <image src="../../static/settings.png" class="item_icon"></image>
-        <text class="title">设置</text>
-        <image class="more3" src="../../static/iconfont/more.png"></image>
-      </view>
+      <!-- <navigator url="../currency/currency">
+		  <view class="card-item">
+		  	<image src="../../static/settings.png" class="item_icon"></image>
+		    <text class="title">通用</text>
+		    <image class="more3" src="../../static/iconfont/more.png"></image>
+		  </view>
+	  </navigator> -->
+	  
+	 
+	  
+	  
 
       <navigator url="../about/about">
         <view class="card-item">
@@ -91,7 +108,9 @@ export default {
       isLogin: false,
     };
   },
-  onLoad() {},
+  onLoad() {
+	  console.log(this.userInfo)
+  },
   onShow() {
     // 使用挂载方法获取用户数据
     let userInfo = this.getGlobalUser("globalUser");

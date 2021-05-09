@@ -1,7 +1,7 @@
 <template>
   <view class="moodTagContainer">
     <view class="tagContainer">
-		<view class="question">你现在心情怎么样</view>
+		<view class="question">滑动选择此刻心情</view>
 		<view class="tag">
 		  <swiper
 		    :indicator-dots="false"

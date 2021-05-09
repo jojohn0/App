@@ -20,6 +20,10 @@
 	/* margin: 0 auto; */
 }
 
+image{
+	border-radius: 30upx;
+}
+
 .content{
 	padding-bottom: 50upx;
 }

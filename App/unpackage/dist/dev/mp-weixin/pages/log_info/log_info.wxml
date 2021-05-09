@@ -1,1 +1,0 @@
-<view class="log_infoContainer"><view class="header"><input type="text" placeholder="标题"/></view><view class="content"><input type="text" placeholder="内容"/></view><view class="footer"><view class="insert_sound"><image src="../../static/log_info_sound.png"></image></view><view class="insert_img"><image src="../../static/log_info_img.png"></image></view></view></view>

@@ -8,7 +8,7 @@
     </view>
     <view class="image">
       <video
-        src="../../static/video/y2mate.com - 拔萝卜 经典儿歌 國語童謠 最好的儿歌 卡通动画 贝瓦儿歌_1080p.mp4"
+        src="../../static/video1.mp4"
         controls
       ></video>
     </view>

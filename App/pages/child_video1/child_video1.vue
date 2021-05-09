@@ -8,7 +8,7 @@
     </view>
     <view class="image">
       <video
-        src="../../static/video/y2mate.com - 狮子VS老虎 Lion vs Tiger Kids Song in Chinese 儿歌童谣 卡通动画 朱妮托尼童话音乐剧_1080p.mp4"
+        src="../../static/video/video1.mp4"
         controls
       ></video>
     </view>
