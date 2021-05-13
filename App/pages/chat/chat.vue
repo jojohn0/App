@@ -2,11 +2,15 @@
 	<view class="chat"  v-if="isLogin==true">
 		<view class="head"> 
 			<view class="head-left">
-				<image class="portrait" src="../../static/image/chat/t2.jpeg" mode=""></image>
+				<navigator url="../QRcode/QRcode">
+					<image class="portrait" src="../../static/image/chat/t2.jpeg" mode=""></image>
+				</navigator>
 				<text class="name">天天</text>
 			</view>
 			<view class="head-right">
-				<image src="../../static/image/chat/more.png" mode=""></image>
+				<navigator url="../scanCode/scanCode">
+					<image src="../../static/image/chat/tianjia.png" mode=""></image>
+				</navigator>	
 			</view>
 		</view>  
 		<view class="chat-list">

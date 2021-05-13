@@ -1,6 +1,5 @@
 <template>
 	<view class="QRcode">
-		<view class="container">
 			<view class="location-header">
 				<view class="header">
 					<image src="./img/t2.jpeg" style="width: 120upx; height:120upx; border-radius: 99upx;"></image>
@@ -26,7 +25,6 @@
 					</view>
 				</view>
 			</view>
-		</view>
 		<view class="spiegare">
 			扫码添加我为好友
 		</view>
@@ -96,8 +94,11 @@
 	}
 	.con-code{
 		width: 400upx;
-		height: 500upx;
+		height: 550upx;
 		margin: 0 auto;
+		border-radius: 20upx;
+		border:2px solid #007AFF;
+		padding:  0 0 130upx 0;
 	}
 	.qrimg{
 		width:100%;
@@ -110,10 +111,7 @@
 		height: 300upx;
 	}
 	.con-code{
-		height: 400upx;
-		border-radius: 20upx;
-		border:2px solid #007AFF;
-		padding:  0 0 130upx 0;
+		
 	}
 	.spiegare{
 		width: 100%;
