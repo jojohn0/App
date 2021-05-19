@@ -1,5 +1,6 @@
 <template>
 	<view class="bear">
+		
 		<view class="nav">
 			<view class="nav-box" @click="isSelect1">
 				<view class="nav-left" :style="'border-bottom:'+[isselect ? '2px solid #007AFF':'none']">
@@ -18,23 +19,7 @@
 			<view class="title">
 				提醒事项
 			</view>
-			<scroll-view scroll-y="true" class="scrollView" show-scrollbar="false">
-				<!-- <view class="remind-item" v-for="(item,index) in reminds" >
-					<uni-datetime-picker :value="item.time" start="1276129830000" end="1754841982000" @change="timestampChange"  hide-second="true"></uni-datetime-picker>
-					<view class="top">
-						<input class="record" type="text" :value="item.content" placeholder="输入提醒事项"/>
-						<view class="select" @tap="isConfirm">
-							<view class="confirm" :class="{displaynone:!isconfirm}"></view>
-						</view>
-					</view>
-				</view> -->
-				<!-- <label class="remind-item" v-for="(item,index) in reminds">
-					<uni-datetime-picker :value="item.time" start="1276129830000" end="1754841982000" @change="timestampChange"  hide-second="true"></uni-datetime-picker>
-					<view class="top">
-						<input class="record" type="text" :value="item.content" placeholder="输入提醒事项"/>
-						<radio :checked="active== index" :value="item.index" @click="radioChange(index)"/>
-					</view>
-				</label> -->
+			<!-- <scroll-view scroll-y="true" class="scrollView" show-scrollbar="false"> -->
 				<checkbox-group @change="getValue">
 					<view class="remind-item" v-for="(item,index) in reminds">
 						<uni-datetime-picker :value="item.time" start="1276129830000" end="1754841982000" @change="timestampChange"  hide-second="true"></uni-datetime-picker>
@@ -44,20 +29,20 @@
 						</view>
 					</view>
 				</checkbox-group>
-			</scroll-view>
+			<!-- </scroll-view> -->
 			<view class="add" @click="addRemind">
 				添加提醒事项
-			</view>
+		</view>
 		</view>
 		
 		
 		
 		<view class="alarmClock" v-if="!isselect">
-			<scroll-view scroll-y="true" class="scrollView" show-scrollbar="false">
+			<!-- <scroll-view scroll-y="true" class="scrollView" show-scrollbar="false"> -->
 				<view class="alarmclock" v-for="item in alarmClock">
 					<long-date type="day" :openStatus="true" @select="onSelectTime"></long-date>
 				</view>
-			</scroll-view>
+			<!-- </scroll-view> -->
 			<view class="add" @click="addAlarmClock">
 				添加闹钟
 			</view>
@@ -161,10 +146,20 @@
 </script>
 
 <style>
+	.bear{
+		position: relative;
+	}
 	.nav{
+		width: 100%;
+		height: 60upx;
 		display: flex;
 		justify-content:  space-around;
 		padding: 0 30upx;
+		position: fixed;
+		top:100upx;
+		left: 0;
+		background: #ffffff;
+		z-index: 99;
 	}
 	.nav-box{
 		display: flex;
@@ -180,8 +175,9 @@
 		text-align: center;
 	}
 	.remind{
+		margin-top: 60upx;
 		padding:0 50upx ;
-		position: relative;
+		/* display: none; */
 	}
 	.title{
 		margin-top: 20upx;
@@ -189,10 +185,13 @@
 		color: #007AFF;
 	}
 	.scrollView{
-		height: 1300upx;
+		/* height: 1000upx; */
 	}
 	.remind-item{
-		
+		border-radius: 20upx;
+		background: #ffffff;
+		padding:10upx 20upx 20upx;
+		margin-top: 20upx;
 	}
 	.top{
 		display: flex;
@@ -207,6 +206,7 @@
 		white-space: nowrap;
 		overflow: auto;
 		text-overflow: ellipsis;
+		margin-right: 40upx;
 	}
 	.select{
 		width:48upx;
@@ -225,10 +225,14 @@
 	.displaynone{
 		display: none;
 	}
+	.alarmClock{
+		margin-top: 60upx;
+	}
 	.add{
 		position: fixed;
-		margin-bottom: 60upx;
-		margin-left: 60upx;
+		width: 100%;
+		background:#ffffff;
+		padding: 30upx 50upx 30upx;
 		bottom:env(safe-area-inset-bottom);
 		left:0;
 		z-index: 99;

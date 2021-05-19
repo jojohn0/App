@@ -394,6 +394,26 @@
             }
             
         }
+		,{
+		    "path" : "pages/chatRoom2/chatRoom",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/chatRoom3/chatRoom",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f9f9f9"
+		    }
+		    
+		}
         ,{
             "path" : "pages/child_video3/child_video3",
             "style" :                                                                                    

@@ -850,6 +850,7 @@
 	}
 
 	.uni-datetime-picker-timebox-pointer {
+		margin-top: 0;
 		/* #ifndef APP-NVUE */
 		cursor: pointer;
 		/* #endif */
