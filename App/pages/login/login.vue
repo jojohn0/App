@@ -194,6 +194,14 @@ export default {
         this.lookurl = "../../static/image/login/y2.png";
       }
     },
+	getGlobalUser:function(key){
+		var userInfo = uni.getStorageSync("globalUser");
+		if(userInfo!=null && userInfo != "" && userInfo != undefined){
+			return userInfo;
+		}else{
+			return null;
+		}
+	}
   },
 };
 </script>

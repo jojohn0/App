@@ -215,6 +215,14 @@ export default {
         second;
       return timer;
     },
+	getGlobalUser:function(key){
+		var userInfo = uni.getStorageSync("globalUser");
+		if(userInfo!=null && userInfo != "" && userInfo != undefined){
+			return userInfo;
+		}else{
+			return null;
+		}
+	}
   },
   onLoad() {},
   onShow() {

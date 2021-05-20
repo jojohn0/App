@@ -93,7 +93,16 @@ export default {
     // this.ctg.currentTag = [];
     // console.log(this.ctg);
   },
-  methods: {},
+  methods: {
+	  getGlobalUser:function(key){
+	  	var userInfo = uni.getStorageSync("globalUser");
+	  	if(userInfo!=null && userInfo != "" && userInfo != undefined){
+	  		return userInfo;
+	  	}else{
+	  		return null;
+	  	}
+	  }
+  },
 };
 </script>
 

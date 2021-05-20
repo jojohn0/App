@@ -63,6 +63,7 @@
 			</view>
 		</view>
 			
+		<button @click="getWs()">请求</button>	
 		
 		
 		
@@ -73,7 +74,7 @@
 	import remindsData from'./remindData.js';
 	import longDate from "@/components/long-date/long-date.vue";
 	export default {
-		components: {
+		components: { 
 		    longDate
 		},
 		data() {
@@ -82,10 +83,25 @@
 				active: null,
 				reminds:[],
 				alarmClock:[{}],
+				socketOpen:false,
+				socketMsgQueue:[],
 			}
 		},
 		onLoad() {
 			this.getReminds(); 
+			
+			// 发送请求 请求唱歌
+			// uni.request({
+			// 	url:"http://localhost:8081",
+			// 	data:'A',
+			// 	success(res){
+			// 		console.log(res);
+			// 	},
+			// 	fail(err){
+			// 		console.log(err);
+			// 	}
+				
+			// })
 		},
 		methods: {
 			//提醒 闹钟转化
@@ -154,7 +170,42 @@
 				if(this.reminds[len-1].content!=''){
 					
 				}
+			},
+			getWs(){
+				var SocketTask = uni.connectSocket({
+				    url: 'ws://localhost:8888',
+					method:'GET',
+					fail:function(res){
+						console.log("连接服务器websocket_失败",res);
+					},
+					success:function(res){
+						console.log("连接服务器websocket_成功",res);
+					},
+					complete:function(res){
+						console.log("连接服务器websocket_完成",res);
+					}
+				});
 				
+				SocketTask.onOpen(function (res) {
+				  console.log('WebSocket连接已打开！');
+				});
+				
+				SocketTask.onError(function(res){
+					console.log("error")
+				})
+				
+				SocketTask.send({
+					data:'123',
+					fail:function(res){
+						console.log("发送失败"+res);
+					},
+					success:function(res){
+						console.log("发送成功"+res);
+					},
+					complete:function(res){
+						console.log(res);
+					}
+				})
 			}
 		}
 	}

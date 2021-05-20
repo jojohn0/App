@@ -355,7 +355,7 @@
 						     警车洗车，动画视频，让孩子们观看和享受。 我们希望你会喜欢这个孩子的视频。
 						    </view>
 						    <view class="item_content_img">
-						      <image src="../../video5.png"></image>
+						      <image src="../../static/video5.png"></image>
 						    </view>
 						  </view>
 						</navigator>

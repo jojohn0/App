@@ -88,6 +88,14 @@ export default {
     this.looks2();
   },
   methods: {
+	  getGlobalUser:function(key){
+	  	var userInfo = uni.getStorageSync("globalUser");
+	  	if(userInfo!=null && userInfo != "" && userInfo != undefined){
+	  		return userInfo;
+	  	}else{
+	  		return null;
+	  	}
+	  },
 		changeValue(value){
 			this.radio = value;
 			console.log(this.radio)
@@ -113,6 +121,7 @@ export default {
 						}
 						
 					},
+					
     //获取账号
     accountInput(e) {
       this.regPhone = e.detail.value;

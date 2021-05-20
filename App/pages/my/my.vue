@@ -136,6 +136,14 @@ export default {
         duration: "1500",
       });
     },
+	getGlobalUser:function(key){
+		var userInfo = uni.getStorageSync("globalUser");
+		if(userInfo!=null && userInfo != "" && userInfo != undefined){
+			return userInfo;
+		}else{
+			return null;
+		}
+	}
   },
 };
 </script>

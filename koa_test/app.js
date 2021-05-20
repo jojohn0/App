@@ -15,7 +15,7 @@ app.use(router.routes(), router.allowedMethods());
 // app.use(async (ctx) => {
 //   // await mysql.insert(addsql);
 //   // await mysql.update(updatesql);
-//   // await mysql.delete(deletesql);
+//   // await mysql.delete(deletesqcl);
 //   let data = await mysql.query("SELECT * FROM users");
 //   ctx.response.body = {
 //     code: 1,
