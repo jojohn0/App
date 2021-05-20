@@ -493,11 +493,10 @@
 	.switch{
 		display: block;
 		padding: 2px;
-		height: 45upx;
 		width: 90upx;
 		background: #48c035;
 		border-radius: 40upx;
-		z-index: 999;
+		z-index: 98;
 	}
 	.switch-control{
 		width: 45upx;

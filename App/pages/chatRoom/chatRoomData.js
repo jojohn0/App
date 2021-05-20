@@ -3,7 +3,7 @@ export default {
     let msgs = [
       {
         id: "a",
-        imgurl: "t4.png",
+        imgurl: "t2.jpeg",
         message: {
           voice: "a",
           time: "60",
@@ -14,7 +14,7 @@ export default {
       },
       {
         id: "b",
-        imgurl: "t5.png",
+        imgurl: "t1.jpeg",
         message: {
           voice: "a",
           time: "20",
@@ -25,7 +25,7 @@ export default {
       },
       {
         id: "a",
-        imgurl: "t4.png",
+        imgurl: "t2.jpeg",
         message: "今天好大的雨",
         types: 0,
         time: new Date() - 1000 * 60 * 2,
@@ -33,7 +33,7 @@ export default {
       },
       {
         id: "a",
-        imgurl: "t4.png",
+        imgurl: "t2.jpeg",
         message: "嗯嗯好吧",
         types: 0,
         time: new Date() - 1000 * 60 * 7,
@@ -41,7 +41,7 @@ export default {
       },
       {
         id: "b",
-        imgurl: "t5.png",
+        imgurl: "t1.jpeg",
         message: "没事的，说明老师关照你",
         types: 0,
         time: new Date() - 1000 * 60 * 8,
@@ -49,7 +49,7 @@ export default {
       },
       {
         id: "a",
-        imgurl: "t4.png",
+        imgurl: "t2.jpeg",
         message: "上课的时候被老师提问，没回答上",
         types: 0,
         time: new Date() - 1000 * 60 * 59,
@@ -57,7 +57,7 @@ export default {
       },
       {
         id: "b",
-        imgurl: "t5.png",
+        imgurl: "t1.jpeg",
         message:
           "怎么了",
         types: 0,
@@ -65,8 +65,8 @@ export default {
         tip: 4,
       },
       {
-        id: "a",
-        imgurl: "t5.png",
+        id: "b",
+        imgurl: "t1.jpeg",
         message: "今天不开心",
         types: 0,
         time: new Date() - 1000 * 60 * 60 * 24,
@@ -74,7 +74,7 @@ export default {
       },
       {
         id: "a",
-        imgurl: "t4.png",
+        imgurl: "t2.jpeg",
         message: "今天感觉挺好的，上课也学到很多知识",
         types: 0,
         time: new Date() - 1000 * 60 * 60 * 24,
@@ -82,7 +82,7 @@ export default {
       },
       {
         id: "b",
-        imgurl: "t5.png",
+        imgurl: "t1.jpeg",
         message: "最近情绪感觉怎么样",
         types: 0,
         time: new Date() - 1000 * 60 * 60 * 24 * 2,
