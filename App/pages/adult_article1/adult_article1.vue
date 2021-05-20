@@ -63,10 +63,10 @@
 							<image src="../../static/jiazhang.png"></image>
 						</view>
 						<view class="user_name">
-							家长1
+							家长15
 						</view>
 						<view class="user_comment">
-							哈哈哈哈哈
+							仅仅靠社会的帮扶是不够的
 						</view>
 					</view>
 					<view class="comment_info">
@@ -74,10 +74,22 @@
 							<image src="../../static/jiazhang.png"></image>
 						</view>
 						<view class="user_name">
-							家长2
+							家长20
 						</view>
 						<view class="user_comment">
 							留守儿童确实值得关心
+						</view>
+					</view>
+					
+					<view class="comment_info">
+						<view class="user_icon">
+							<image src="../../static/stu.png"></image>
+						</view>
+						<view class="user_name">
+							帮扶人员16
+						</view>
+						<view class="user_comment">
+							学会关爱留守儿童很重要
 						</view>
 					</view>
 				</view>

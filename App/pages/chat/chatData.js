@@ -3,7 +3,7 @@ export default{
 		let friendarr=[
 			{
 				id:1,
-				imgurl:'../../static/image/chat/t1.jpeg',
+				imgurl:'../../static/stu.jpeg',
 				name:'小爱姐姐',
 				tip:'2',
 				time:new Date()-1000*60*2,

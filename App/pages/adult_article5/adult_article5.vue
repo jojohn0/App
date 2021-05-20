@@ -63,10 +63,10 @@
 							<image src="../../static/jiazhang.png"></image>
 						</view>
 						<view class="user_name">
-							家长1
+							家长13
 						</view>
 						<view class="user_comment">
-							哈哈哈哈哈
+							国家对留守儿童的关注越来越好
 						</view>
 					</view>
 					<view class="comment_info">
@@ -74,10 +74,10 @@
 							<image src="../../static/jiazhang.png"></image>
 						</view>
 						<view class="user_name">
-							家长2
+							家长10
 						</view>
 						<view class="user_comment">
-							留守儿童确实值得关心
+							仅仅依靠社会对留守儿童的关心是不够的
 						</view>
 					</view>
 				</view>

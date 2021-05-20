@@ -2,12 +2,16 @@
 	<view class="QRcode">
 			<view class="location-header">
 				<view class="header">
-					<image src="./img/t2.jpeg" style="width: 120upx; height:120upx; border-radius: 99upx;"></image>
+					<image src="../../static/haizi.png" style="width: 120upx; height:120upx; border-radius: 99upx;" v-if="userInfo.identity==1"></image>
+					<image src="../../static/jiazhang.png" style="width: 120upx; height:120upx; border-radius: 99upx;" v-else-if="userInfo.identity==3"></image>
+					<image src="../../static/stu.png" style="width: 120upx; height:120upx; border-radius: 99upx;" v-else-if="userInfo.identity==2"></image>
 				</view>
 			</view>
 			<view class="location-code">
 				<view class="con-code">
-					<view class="username">天天</view>
+					<view class="username" v-if="userInfo.identity==1">儿童{{userInfo.id}}</view>
+					<view class="username" v-else-if="userInfo.identity==2">帮扶人员{{userInfo.id}}</view>
+					<view class="username" v-else-if="userInfo.identity==3">家长{{userInfo.id}}</view>
 					<view class="qrimg">
 						<tki-qrcode
 						ref="qrcode"
@@ -47,11 +51,23 @@
 				iconsize: 40, // 二维码图标大小
 				lv: 3, // 二维码容错级别 ， 一般不用设置，默认就行
 				loadMake: true, // 组件加载完成后自动生成二维码
-				src: '' // 二维码生成后的图片地址或base64
+				src: '' ,// 二维码生成后的图片地址或base64,
+				userInfo:'',
+				isLogin:false,
 			}
 		},
 		onLoad() {
+			let userInfo = this.getGlobalUser("globalUser");
 			
+			console.log(userInfo);
+			if (userInfo != null) {
+			  this.isLogin = true;
+			  this.userInfo = userInfo;
+			  console.log(this.userInfo);
+			} else {
+			  this.isLogin = false;
+			  this.userInfo = {};
+			}
 		},
 		methods: {
 			

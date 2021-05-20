@@ -53,9 +53,6 @@ export default {
 	  }
   },
   onLoad() {
-  	
-  },
-  onShow() {
   	// 使用挂载方法获取用户数据
   	let userInfo = this.getGlobalUser("globalUser");
   	
@@ -68,22 +65,25 @@ export default {
   	  this.isLogin = false;
   	  this.userInfo = {};
   	}
-	
-	uni.request({
-		url:`${config.mobileHost}/user`,
-		method:"GET",
-		data:{
-			identity:3,
-			childPhone: this.userInfo.phone
-		},
-		success: (res) => {
-			this.parentsPhone = res.data.phone;
-			console.log(this.parentsPhone);
-		},
-		fail: (err) => {
-			console.log(err)
-		}
-	})
+  	
+  	uni.request({
+  		url:`${config.mobileHost}/user`,
+  		method:"GET",
+  		data:{
+  			identity:3,
+  			childPhone: this.userInfo.phone
+  		},
+  		success: (res) => {
+  			this.parentsPhone = res.data.phone;
+  			console.log(this.parentsPhone);
+  		},
+  		fail: (err) => {
+  			console.log(err)
+  		}
+  	})
+  },
+  onShow() {
+  	
   }
 };
 </script>

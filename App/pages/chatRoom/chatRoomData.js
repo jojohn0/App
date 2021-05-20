@@ -1,32 +1,29 @@
 export default {
   message: function () {
     let msgs = [
-      {
-        id: "a",
-        imgurl: "t2.jpeg",
-        message: {
-          voice: "a",
-          time: "60",
-        },
-        types: 2,
-        time: new Date() - 1000 * 20,
-        tip: 9,
-      },
+      // {
+      //   id: "a",
+      //   imgurl: "t2.jpeg",
+      //   message: "嗯嗯好吧",
+      //   types: 0,
+      //   time: new Date() - 1000 * 60 * 7,
+      //   tip: 1,
+      // },
+      // {
+      //   id: "b",
+      //   imgurl: "t1.jpeg",
+      //   message: {
+      //     voice: "a",
+      //     time: "20",
+      //   },
+      //   types: 2,
+      //   time: new Date() - 1000 * 60 * 1,
+      //   tip: 8,
+      // },
       {
         id: "b",
         imgurl: "t1.jpeg",
-        message: {
-          voice: "a",
-          time: "20",
-        },
-        types: 2,
-        time: new Date() - 1000 * 60 * 1,
-        tip: 8,
-      },
-      {
-        id: "a",
-        imgurl: "t2.jpeg",
-        message: "今天好大的雨",
+        message: "今天过得怎么样",
         types: 0,
         time: new Date() - 1000 * 60 * 2,
         tip: 0,
@@ -65,8 +62,8 @@ export default {
         tip: 4,
       },
       {
-        id: "b",
-        imgurl: "t1.jpeg",
+        id: "a",
+        imgurl: "t2.jpeg",
         message: "今天不开心",
         types: 0,
         time: new Date() - 1000 * 60 * 60 * 24,
