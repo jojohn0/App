@@ -448,7 +448,7 @@
 		align-items: center;	
 		margin-top: 30rpx;
 		height: 160rpx;
-		background: #FFFFFF;
+		background: #f9f9f9;
 		line-height: 80rpx;
 		padding-left: 30rpx;
 		padding-right: 30rpx;
