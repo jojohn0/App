@@ -203,9 +203,9 @@
 		justify-content:  space-around;
 		padding: 0 30upx;
 		position: fixed;
-		top:80upx;
+		top:44px;
 		left: 0;
-		background: #ffffff;
+		background: #f9f9f9;
 		z-index: 99;
 	}
 	.nav-box{
@@ -236,7 +236,7 @@
 	}
 	.remind-item{
 		border-radius: 20upx;
-		background: #ffffff;
+		background: #f9f9f9;
 		padding:10upx 20upx 20upx;
 		margin-top: 20upx;
 	}
@@ -278,7 +278,7 @@
 	.add{
 		position: fixed;
 		width: 100%;
-		background:#ffffff;
+		background:#f9f9f9;
 		padding: 30upx 50upx 30upx;
 		bottom:env(safe-area-inset-bottom);
 		left:0;

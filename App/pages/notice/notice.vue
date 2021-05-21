@@ -120,7 +120,6 @@
 	.switch{
 		display: block;
 		padding: 2px;
-		height: 55upx;
 		width: 90upx;
 		background: #48c035;
 		border-radius: 40upx;
