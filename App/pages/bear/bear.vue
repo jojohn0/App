@@ -203,7 +203,7 @@
 		justify-content:  space-around;
 		padding: 0 30upx;
 		position: fixed;
-		top:100upx;
+		top:80upx;
 		left: 0;
 		background: #ffffff;
 		z-index: 99;

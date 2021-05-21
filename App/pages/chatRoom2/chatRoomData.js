@@ -3,28 +3,6 @@ export default {
     let msgs = [
       {
         id: "a",
-        imgurl: "",
-        message: {
-          voice: "a",
-          time: "60",
-        },
-        types: 2,
-        time: new Date() - 1000 * 20,
-        tip: 9,
-      },
-      {
-        id: "b",
-        imgurl: "jiazhang.png",
-        message: {
-          voice: "a",
-          time: "20",
-        },
-        types: 2,
-        time: new Date() - 1000 * 60 * 1,
-        tip: 8,
-      },
-      {
-        id: "a",
         imgurl: "t2.jpeg",
         message: "今天好大的雨",
         types: 0,
@@ -58,8 +36,7 @@ export default {
       {
         id: "b",
         imgurl: "jiazhang.png",
-        message:
-          "怎么了",
+        message:"怎么了",
         types: 0,
         time: new Date() - 1000 * 60 * 60,
         tip: 4,
