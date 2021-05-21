@@ -69,7 +69,7 @@
 				reminds:[],
 				alarmClock:[{}],
 				socketOpen:false,
-				socketMsgQueue:[],
+				socketMsgQueue:['A'],
 			}
 		},
 		onLoad() {
@@ -157,40 +157,36 @@
 				}
 			},
 			getWs(){
-				var SocketTask = uni.connectSocket({
-				    url: 'ws://localhost:8888',
-					method:'GET',
-					fail:function(res){
-						console.log("连接服务器websocket_失败",res);
-					},
-					success:function(res){
-						console.log("连接服务器websocket_成功",res);
-					},
-					complete:function(res){
-						console.log("连接服务器websocket_完成",res);
-					}
+				
+				var socketOpen = false;
+				var socketMsgQueue = ['A'];
+				
+				
+				uni.connectSocket({
+				  url: 'ws://localhost:8888'
 				});
 				
-				SocketTask.onOpen(function (res) {
+				uni.onSocketOpen(function (res) {
+				  socketOpen = true;
 				  console.log('WebSocket连接已打开！');
+				  for (var i = 0; i < 1; i++) {
+				    sendSocketMessage(socketMsgQueue[i]);
+				  }
+				  socketMsgQueue = [];
 				});
+				function sendSocketMessage(msg) {
+				  if (socketOpen) {
+				    uni.sendSocketMessage({
+				      data: msg
+				    });
+				  } else {
+				    socketMsgQueue.push(msg);
+				  }
+				}
 				
-				SocketTask.onError(function(res){
-					console.log("error")
-				})
 				
-				SocketTask.send({
-					data:'123',
-					fail:function(res){
-						console.log("发送失败"+res);
-					},
-					success:function(res){
-						console.log("发送成功"+res);
-					},
-					complete:function(res){
-						console.log(res);
-					}
-				})
+				
+				
 			}
 		}
 	}
